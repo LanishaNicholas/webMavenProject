@@ -1,4 +1,4 @@
-package com.spring;
+package com.springonline;
 
 public class BookModel {
 	private int bookid;
