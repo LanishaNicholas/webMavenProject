@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +18,7 @@
 			<th>Action</th>
 		</tr>
 		
-		<c:forEach var="data" items="${allbook }">
+		<c:forEach var="data" items="${allbook}">
 		
 		<tr>
 		<td>${data.bookid }</td>
@@ -26,10 +26,8 @@
 		<td>${data.bname }</td>
 		<td>${data.author }</td>
 		<td>${data.price }</td>
-		<!-- <td><a href="edit/${data.id }">Edit</a>
-		<a href="Delete/${data.id }">Delete</a></td>
-		 -->		
-		
+		<td><a href="edit/${data.bookid }">Edit</a></td>
+		<td><a href="delete/${data.bookid }">Delete</a></td>
 		
 		</tr>
 		</c:forEach>

@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h1>Book Details</h1>
-	<core:forEach var="bdata" items="${bookdata}">
+	<core:forEach var="bdata" items="${allbook}">
 		${bdata.category}
 		${bdata.bname }
 		${bdata.author }
